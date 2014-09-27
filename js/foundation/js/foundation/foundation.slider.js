@@ -4,7 +4,7 @@
   Foundation.libs.slider = {
     name : 'slider',
 
-    version : '5.4.3',
+    version : '5.3.3',
 
     settings: {
       start: 0,
@@ -128,23 +128,15 @@
 
       $handle.parent().children('input[type=hidden]').val(value);
 
-      if (!$handle[0].hasAttribute('aria-valuemin')) {
-        $handle.attr({
-          'aria-valuemin': settings.start,
-          'aria-valuemax': settings.end,
+      if (settings.input_id != '') {
+        $(settings.display_selector).each(function(){
+          if (this.hasOwnProperty('value')) {
+            $(this).val(value);
+          } else {
+            $(this).text(value);
+          }
         });
       }
-      $handle.attr('aria-valuenow', value);
-
-      // if (settings.input_id != '') {
-      //   $(settings.display_selector).each(function(){
-      //     if (this.hasOwnProperty('value')) {
-      //       $(this).val(value);
-      //     } else {
-      //       $(this).text(value);
-      //     }
-      //   });
-      // }
 
     },
 
