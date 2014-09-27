@@ -1,0 +1,244 @@
+/***** HOME *******/
+body.home {
+	.top-bar-container, .tab-bar {
+		margin-bottom: 0;
+	}
+	footer {
+		.bottom_footer {
+			margin-top: 0.25rem;
+		}
+	}
+
+	a img:hover {
+		opacity: .9;
+	}
+}
+
+.content_block {
+	padding: 2rem 0;
+	position: relative;
+
+	h1.site_intro {
+		color: $dark_blue;
+		font-size: 2.4rem;
+		font-weight: 500;
+		padding-top: 9vw;	
+	}
+
+	h2 {
+		color: $dark_blue;
+		font-size: 1.5rem;
+		font-weight: 500;
+		&.center {
+			text-align: center;
+			padding-bottom: 1rem;
+		}
+	}
+
+	ul.arrows {
+		margin-left: 0;
+	}
+}
+
+.dots {
+	position: absolute;
+	top: -12px;
+	margin: 0 auto;
+	width: 100%;
+	color: #f27406;
+	text-align: center;
+	font-size: 1.4rem;
+}
+
+.hero, .publications_row {
+	background: $light_blue;
+}
+
+.hero {
+	background-image: url('../images/hero_mom_tall.jpg');
+	background-repeat: no-repeat;
+	background-position: center 0;
+	// background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.email_signup {
+	padding: 1rem 0;
+	background: $bright_blue;
+	color: #FFF;
+	.cta-email {
+		h2 {
+			font-size: 1.6525rem;
+			color: #FFF;
+			margin: 0;
+			font-weight: 300;
+		}
+	}
+	.gform_wrapper {
+		
+		.gf_left_half, .gf_right_half {
+			margin-bottom: 0;
+			width: 41%;
+		}
+
+		.gform_footer.top_label { /*the go button*/
+			padding: 0;
+			margin: 0;
+			clear: none;
+		}
+
+		input[type=text], input[type=url], input[type=email], input[type=tel], input[type=number], .gform_wrapper input[type=password] {
+			margin-bottom: 0;
+			color: #83c2db;
+
+		}		
+
+		.gform_image_button {
+			margin-top: -9px;
+			float: right;
+			position: absolute;
+			&:hover {
+				opacity: .9;
+			}
+		}
+	}
+}
+
+.gear {
+	padding-right: 0;
+	float: left;
+	width: 65px;
+}
+
+.content_block.features {
+	background: $light_green;
+}
+
+
+.home_about {
+	img {
+		&.bio_large {
+		}
+		&.bio_mobile {
+			float: left;
+			width: 135px;
+			padding-right: 1rem;
+		}
+	}
+	div.bio {
+		box-sizing: border-box;
+	}
+}
+
+.testimonials_row {
+	padding-bottom: 0;
+
+	p {
+		font-size: 1.03rem;
+		line-height: 1.4rem;
+		&.author_attribute{
+			font-style: italic;
+			text-align: right;
+			font-family: muli, 'open sans';
+			font-weight: 100;
+			font-size: 1rem;
+		}
+		&.testimonial_quote {
+			margin-bottom: .5rem;
+		}
+	}
+}
+
+.publications_row {
+	position: relative;
+	a.publication_link {
+		position: absolute;
+		bottom: 0;
+		font-size: 1.2rem;
+		i {
+			font-size: 1rem;
+		}
+	}
+}
+
+// small screens
+@media only screen and (max-width: 40.063em) {
+	.hero.content_block {
+		padding: 1rem 0 2rem;
+		background: transparent;
+
+		h1 {
+			text-align: center;
+			font-size: 1.725rem;
+			line-height: 2.1rem;
+			padding-top: 0;	
+		}
+
+		.button.blue {
+			margin-left: auto;
+			margin-right: auto;
+			display: table;
+		}
+	}
+	.testimonial_block:first-of-type {
+		margin-bottom: 1rem;	
+	}
+
+	.publications_row {		
+		a.publication_link {
+			position: relative;
+			margin-top: 1rem;
+			display: block;
+			text-align: center;
+		}
+	}	
+}
+
+// Medium screens /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	.content_block {
+		ul.arrows a li {
+			color: $link_color_bright;
+			text-shadow: 1px 1px rgba(0,0,0,0.4);
+			&:hover {
+				color: lighten($link_color_bright, 10%);
+			}
+		}
+		.gear {
+			width: 50px;
+		}
+		&.features {
+			.feature_boxes {
+				img {
+					max-width: 200px;
+				}
+			}			
+		}
+	}
+}
+
+
+// mobile devices screens 
+@media only screen and (max-width: 64em) {
+	.email_signup .gform_wrapper {
+		margin-top: 1rem;
+	}
+	.home_about {
+		a.button.radius.blue.outside-column {
+			margin: 0 auto;
+			text-align: center;
+			display:table;			
+		}
+	}
+}
+
+//large and up
+@media only screen and (min-width: 64.1em) {
+	.home_about {
+		a.button.radius.blue.inside-column {
+		}
+	}
+}
