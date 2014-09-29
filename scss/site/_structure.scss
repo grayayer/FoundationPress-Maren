@@ -37,6 +37,13 @@ figcaption {
 	color: #6f6f6f; 
 }
 
+
+.row {
+	.columns.no-padding{
+	padding: 0;
+	}
+}
+
 // Add the alignment classes used by the WordPress media library
 
 .alignleft {
@@ -71,6 +78,7 @@ img.alignright {
 // Add some whitespace between top bar and content
 .top-bar-container, .tab-bar {
 	margin-bottom: rem-calc(32);
+	border-bottom: 7px solid $primary-darken;
 }
 
 // Fix the issue where the WP adminbar overlaps the mobile menu
@@ -85,26 +93,265 @@ img.alignright {
 
 // Insert styles here
 
+@import 'icomaren';
+@import 'webfonts'; //currently geometria and the custom iconfont
+
+a {
+	transition: all 300ms ease-out;
+}
+
+.centered {
+	margin: 0 auto;
+	display: table;
+
+}
+
+.container p a {
+	text-decoration: underline;
+}
+
+input[type="submit"] {
+  -webkit-border-radius: $global-radius;
+  		  border-radius: $global-radius;
+}
+
+.button {
+	&:active {
+		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+	}
+	&.blue {
+		background-color: $bright_blue;
+		&:hover {
+			background-color: scale-color($bright_blue, $lightness: $button-function-factor);
+		}
+	}
+}
+
+ul.arrows li {
+	list-style-image: none;
+	list-style: none;
+	font-family: geometria;
+	font-weight: 500;
+	&:before {
+		font-family: foundation-icons;
+		content: "\f10b";
+		padding-right: 5px;
+	}
+}
+
+/*image classes */
+
+.inline_image_left {
+	float: left;
+	margin: 0 1.5rem 0.5rem 0;
+}
+
+
 
 /**
  * 3.0 Header, sidebar and footer
  * ----------------------------------------------------------------------------
  */
 
-// A more subtle background color for the active menu item
-.top-bar-section li.active:not(.has-form) a:not(.button)  {
-	background: #272727;
+@import 'header';
+@import 'search'; // search icon button styles
+@import 'ebook';
+
+ul.off-canvas-list li a:hover {
+	background: $bright_blue;
 }
-.top-bar-section li.active:not(.has-form) a:hover:not(.button) {
-	background: #202020;
-}
+
+
+/*FOOTER*/
 
 // Add some whitespace above the footer for medium-up screens
 @media #{$medium-up} {
 	footer.row {
-		margin-top: rem-calc(60);
+		padding-top: rem-calc(20);
+		padding-bottom: rem-calc(20);		
 	}
 }
+
+ .top-bar .name h1 {
+ 	line-height: ($topbar-height)*1.15;
+ }
+
+.top-bar-section ul.sub-menu.dropdown li a{
+	line-height: ($topbar-height)*.75;
+}
+
+.top-bar-section ul.top-bar-menu li { /*structured this way because I can't get the decendent selector of > to work */
+	a {
+		text-transform: uppercase;
+	}
+	li a {
+		text-transform: none;
+	}
+}
+
+
+/*sidebar*/
+aside {
+	article.widget.row {
+		border: 1px solid $body-font-color;
+		padding: 1rem .5rem;
+		margin: 0 0 3rem;
+
+		h6 {
+			font-size: 1.4rem;
+			font-weight: 600;
+		}
+	}
+}
+
+.page-template-page-workshop-php footer.bottom_footer {
+	margin-top: 0;
+}
+
+footer.bottom_footer {
+	margin-top: rem-calc(20);
+	background-color: $dark_grey;
+	color: #FFF;
+	border-top: 7px solid $primary-darken;
+	font-family: Geometria;
+	font-size: $footer_font_size;
+
+	footer.row {
+		padding-top: 2.25rem;
+
+		a {
+			color: #FFF;
+			text-decoration: inherit;
+			transition: all 300ms ease-out;
+
+			&:hover {
+				text-decoration:none;
+				color: $link_color_bright;
+			}
+		}
+
+		ul.quick_menu {
+			list-style: none;
+			line-height: 2.3rem;
+			font-weight: 500;
+			font-size: $footer_font_size;
+		}
+
+		.copyright_notice, .developer_credit {
+			margin-top: 1rem;
+			color: #9d9d9d;
+			font-size: .65rem;
+			a {
+				color: #9d9d9d;
+				text-decoration: underline;
+				&:hover {
+					text-decoration:none;
+					color: $link_color_bright;
+				}
+			}
+			.credit {
+				font-weight: 400px;
+				display: block;
+				margin: 5px 0;
+			}
+		}
+
+		.developer_credit {
+			font-size: .6rem;
+
+			strong {
+				display: block;
+			}
+		}		
+
+		.social_links {
+			a {
+				color: #FFF;
+				font-size: 2.5rem;
+				margin-left: .5rem;
+				&:hover {
+					color: $link_color_bright;
+				}
+				&:active {
+					color: $link_color_bright_active;
+				}
+			}
+		}
+
+		article.first {
+			text-transform: uppercase;
+		}
+
+		article.middle {
+
+			.widget {
+				clear: both;
+			}
+
+			a {
+				text-decoration: underline;
+			}
+
+			h6 {
+				color: $link_color_bright;
+				font-weight: 600;
+			}
+
+		}
+
+		article.last {
+			text-align: right;
+		}
+	}
+}
+
+
+
+// Small screens
+
+@media only screen and (max-width: 40em) {  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+	
+	footer.bottom_footer footer.row article.last {
+		padding-top: 1rem;
+		text-align: left;
+		
+		.developer_credit {
+			margin-top: 0;
+			strong {
+				display: none;
+			}
+		}	
+	}
+
+	.columns.sidebar-columns {
+		padding: 0;
+	}
+}
+
+// Medium screens /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+	.columns.sidebar-columns.first {
+		padding-right: 0.9375rem;
+	}
+
+	.columns.sidebar-columns.last {
+		padding-left: 0.9375rem;
+	}	
+
+} 
+
+// Large screens
+@media only screen and (min-width: 64.063em)  {
+
+	.columns.sidebar-columns {
+		padding: 0;
+	}
+
+ } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+
+
 
 
 /**
@@ -177,12 +424,73 @@ img.alignright {
 	 * ------------------------------------
 	 */
 
-	// Insert styles here
+	 	.gform_wrapper {
 
+	 		ul {
+	 			margin: 0;
+	 		}
 
+			li, form li {
+			margin-left: 0 !important;
+			list-style-type: none !important;
+			list-style-image: none !important;
+			list-style: none !important;
+			overflow: visible;
+			}
+			.gfield_label {
+				display: none;
+			}
+
+			input[type=text], input[type=url], input[type=email], input[type=tel], input[type=number], .gform_wrapper input[type=password] {
+				font-size: inherit;
+				font-family: inherit;
+				padding: 5px 2px 5px 9px;
+				border-radius: $global-radius;
+			}		
+
+			.round-submit {
+				input.button, input[type=submit], #gform_submit_button_1 {
+					font-size: 1em;
+					border-radius: 100%;
+					font-family: geometria;
+					font-weight: 700;
+					font-size: 1rem;
+					margin: 0;
+					padding: .58rem .5rem .42rem .5rem;
+					line-height: 1.5rem;
+				}
+			}
+
+			span.prefix {
+				display: none;
+			}
+
+			.gf_left_half, .gf_right_half {
+				width: 37%;
+				float: left;
+				margin-right: .5rem;
+			}
+
+			.gform_footer.top_label { /*the go button*/
+				padding: 0;
+				margin: 0;
+				clear: none;
+			}
+
+			.gform_validation_container {
+				display: none;
+			}
+		}
 /**
  * 5.0 Plugins
  * ----------------------------------------------------------------------------
  */
 
 // Insert styles here
+
+/* SPECIFIC pages */
+
+@import 'home';
+@import 'workshops';
+@import 'common-elements';
+@import 'blog';

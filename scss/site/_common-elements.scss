@@ -1,0 +1,54 @@
+.feature_boxes {
+	a, span {
+		position: static;
+
+		img {
+			//max-width: 170px;
+			max-width: 100%;
+			text-align: center;
+			margin: 0 auto;
+			display: table;
+			/* &:hover {
+				opacity: .9;
+			} */
+		}
+
+		&:hover:before {
+			// background: url('../images/feature_image_hover.png') no-repeat top right;
+			background-color: $light_green;
+			font-size: 2rem;
+			line-height: 3rem;
+			text-align: center;
+			color: $brand_green;
+			height: 45px;
+			width: 45px;
+			content: '\f00c';
+			font-family: 'icomaren';
+			border-radius: 100%;
+			display: table;
+			position: absolute;
+			right: 2rem;
+			top: 0;
+			z-index: 1;
+		}		
+	}
+
+	h4, p {
+		text-align: center;
+	}
+	h4 {
+		color: $dark_blue;
+		font-weight: strong;
+		font-weight: 500;
+		font-size: 1.2rem;
+		margin: .5rem 0;
+	}
+	p {
+		font-size: .9rem;
+		line-height: 1.3rem;
+	}
+}
+
+.quote {
+margin-bottom: 2rem;
+}

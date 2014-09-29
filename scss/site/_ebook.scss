@@ -1,0 +1,129 @@
+$top-blue: #2da2bc;
+$bottom-blue: #33bad7;
+
+/* RULES JUST FOR THE EBOOK */
+article.ebook {
+	margin: 5rem 0 2rem;
+	color: #FFF;
+}
+
+.ebook_widget {
+	.top-half, .bottom-half {
+		border: 1px solid #05648a;
+		padding: 1rem 1.4375rem;
+	}
+
+	.top-half {
+		background: $top-blue;
+		h1 {
+			text-align: center;
+			color: #FFF;
+			font-weight: 500;
+			font-size: 2rem;
+			line-height: 2.3rem;
+		}
+	}
+
+	.bottom-half {
+		background: $bottom-blue;
+
+		.tagline {
+			margin-bottom: 1rem;
+		}
+
+		.button {
+			margin-bottom: 0.55rem;
+			padding: .4rem .8rem;
+			font-weight: 500;
+			float: right;
+		}
+
+		.hate-spam {
+			font-size: .7rem;
+			clear: both;
+		}
+	}
+}
+
+
+// Small screens
+
+@media only screen and (max-width: 40em) {  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+	article.ebook {
+		margin: 0 0 2rem;
+
+			.ebook_widget {
+				.top-half {
+					h1 {
+						text-align: right;
+						color: white;
+						font-weight: 500;
+						font-size: 1.3rem;
+						line-height: 2.2rem;
+					}
+
+				img.ebook_img {
+					/*rules here*/
+					float: right;
+					margin-left: 15px;
+				}
+			}
+		}
+	}
+}
+
+// Medium screens /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	article.ebook {
+		margin: 0 0 2rem;
+
+		.ebook_widget {
+			.top-half {
+				border-bottom: none;
+				background: $bottom-blue;
+				padding-bottom: 0;
+
+					h1 {
+						text-align: left;
+						color: white;
+						font-weight: 500;
+						font-size: 1.3rem;
+						line-height: 2.2rem;
+						padding-bottom: 1rem;
+						margin-bottom: 0;
+					}					
+
+				img.ebook_img {
+					/*rules here*/
+					float: right;
+					margin-left: 15px;
+				}
+			}
+			.bottom-half {
+				border-top: none;
+				padding-top: 0;				
+			}	
+		}
+	}
+}
+
+// Large screens
+@media only screen and (min-width: 64.063em)  {
+	.top-half {
+		background: #2da2bc;
+		h1 {
+			text-align: center;
+			color: #FFF;
+			font-weight: 500;
+			font-size: 2rem;
+			line-height: 2.3rem;
+		}
+		img.ebook_img {
+			position: relative;
+			margin-top: -100px;			
+			right: 24px;
+			max-width: initial;
+		}
+	}
+
+ } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */

@@ -73,7 +73,7 @@ get_header(); ?>
 					</ul>			
 				</div>
 				<div class="small-12 medium-5 columns">
-					<img src="<?php echo get_stylesheet_directory_uri()?>/images/video-image-placer.png">
+					<div class="flex-video"><iframe src="//player.vimeo.com/video/105395776?title=0&amp;byline=0&amp;portrait=0" width="570" height="428" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 				</div>
 			</div>
 		</div>
@@ -81,7 +81,7 @@ get_header(); ?>
 </div>
 
 <div class="features content_block">
-	<div class="dots">&bull; &bull; &bull; &bull; &bull;</div>
+	<div class="seperator_dots">&bull; &bull; &bull; &bull; &bull;</div>
 		<div class="row">
 		<div class="small-12 large-12 columns">
 			<h2 class="center">Let Me Help You</h2>
@@ -115,7 +115,7 @@ get_header(); ?>
 <!----- ABOUT SECTION ---->	
 
 <div class="home_about content_block">
-	<div class="dots">&bull; &bull; &bull; &bull; &bull;</div>
+	<div class="seperator_dots">&bull; &bull; &bull; &bull; &bull;</div>
 	<div class="row">
 		<h2 class="center">Who is Maren Schmidt?</h2>
 		<div class="small-12 large-12 columns">
@@ -127,7 +127,7 @@ get_header(); ?>
 					<p>
 					<span class="hide-for-large-up"><img src="<?php echo get_stylesheet_directory_uri()?>/images/maren_profile_circle3.jpg" class="bio_mobile hide-for-large-up"></span>
 
-						Maren Schmidt is a certified Montessori teacher with the Association Montessori Internationale (AMI) and holds a Masters in Education from Loyola College in Maryland, as well as a BA from the University of Arkansas in Interpersonal and Organizational Communications. Maren foundetd a Montessori school and has over thirty years experience working with children.</p>
+						Maren Schmidt is a certified Montessori teacher with the Association Montessori Internationale (AMI) and holds a Masters in Education from Loyola College in Maryland, as well as a BA from the University of Arkansas in Interpersonal and Organizational Communications. Maren founded a Montessori school and has over thirty years experience working with children.</p>
 					<span class="show-for-large-up"><a class="button radius blue inside-column" href="/about/">READ MORE ABOUT MAREN</a></span>
 				</div>
 					<span class="hide-for-large-up"><a class="button radius blue outside-column" href="/about/">READ MORE ABOUT MAREN</a></span>
@@ -141,7 +141,7 @@ get_header(); ?>
 <!----- OTHER PUBLICATIONS SECTION	 ---->
 
 <div class="publications_row content_block">
-	<div class="dots">&bull; &bull; &bull; &bull; &bull;</div>
+	<div class="seperator_dots">&bull; &bull; &bull; &bull; &bull;</div>
 <div class="row" style="max-width: 100%;">
 	<div class="small-12 large-12 columns">
 			<h2 class="center">Other Places To Find Maren's Advice</h2>
@@ -165,7 +165,7 @@ get_header(); ?>
 
 
 <div class="testimonials_row content_block">
-	<div class="dots">&bull; &bull; &bull; &bull; &bull;</div>
+	<div class="seperator_dots">&bull; &bull; &bull; &bull; &bull;</div>
 	<div class="row">
 		<div class="small-12 large-12 columns">
 			<div class="row">

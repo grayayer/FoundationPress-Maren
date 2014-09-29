@@ -46,7 +46,7 @@ get_header(); ?>
 <!-- WORKSHOP LIST -->
 
 <div class="workshop_list content_block">
-	<div class="dots hide-for-small">&bull; &bull; &bull; &bull; &bull;</div>
+	<div class="seperator_dots hide-for-small">&bull; &bull; &bull; &bull; &bull;</div>
 	<div class="row">
 		<div class="columns small-12">
 			<h2>Short Courses <small>available now</small></h2>	
@@ -82,7 +82,7 @@ get_header(); ?>
 </div>
 
 <div class="full_courses workshop_content_block content_block">
-	<div class="dots hide-for-small">&bull; &bull; &bull; &bull; &bull;</div>
+	<div class="seperator_dots hide-for-small">&bull; &bull; &bull; &bull; &bull;</div>
 		<div class="row">
 			<div class="small-12 large-12 columns section_title">
 				<h1>Full Courses <small>available now</small></h1>	
@@ -120,7 +120,7 @@ get_header(); ?>
 </div>
 
 <div class="live_webinars workshop_content_block content_block">
-	<div class="dots hide-for-small">&bull; &bull; &bull; &bull; &bull;</div>
+	<div class="seperator_dots hide-for-small">&bull; &bull; &bull; &bull; &bull;</div>
 		<div class="row">
 			<div class="small-12 large-12 columns section_title">
 				<h1>Live Webinars <small>monthly</small></h1>	

@@ -1,0 +1,155 @@
+$box_size: 35px;
+
+.sb-search {
+    position: relative;
+    width: 0%;
+    min-width: $box_size;
+    height: $box_size;
+    float: right;
+    overflow: hidden;
+    border-radius: 5px;
+ 
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    transition: width 0.3s;
+ 
+    -webkit-backface-visibility: hidden;
+    /* margin-right: 15px; puts the box in alignment with the nav bar edge */
+}
+
+/*let’s position the search input. We’ll set a percentage-based width so that when we expand the parent, the input will expand with it. Setting the right height, font-size and padding will ensure that the text is centered (using line-height won’t work as expected in IE8, so let’s set the paddings instead).
+Setting the input to position absolute might not seem necessary, but it solves a nasty little thing that happens sometimes when closing the search: the input seems visible on the right side for a very short moment.*/
+
+
+.sb-search-input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    outline: none;
+    background: #fff;
+    width: 0%;
+    height: auto;
+    margin: 0;
+    z-index: 10;
+    padding: 10px 65px 10px 20px;
+    font-family: inherit;
+    font-size: 22px;
+    color: #FFF;
+    border-radius: 5px;
+}
+ 
+input[type="search"].sb-search-input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 5px;
+}
+
+/* Let’s define the color of the placeholder text with these vendor-specific rules: */
+.sb-search-input::-webkit-input-placeholder {
+    color: $dark_blue;
+}
+ 
+.sb-search-input:-moz-placeholder {
+    color: $dark_blue;
+}
+ 
+.sb-search-input::-moz-placeholder {
+    color: $dark_blue;
+}
+ 
+.sb-search-input:-ms-input-placeholder {
+    color: $dark_blue;
+}
+
+/*the search icon button and the submit input. We know that we want them in the same place, so let’s position them on the right corner and set the same dimensions. Since they will be on top of each other, we’ll set them to absolute positioning:*/
+.sb-icon-search,
+.sb-search-submit  {
+    width: $box_size;
+    height: $box_size;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    line-height: $box_size;
+    text-align: center;
+    cursor: pointer;
+}
+/*we will want to have the icon button clickable.
+Then, when we open the input, we want the submit input to be clickable.
+So, well set the z-index of the submit input to -1 in the beginning and make it transparent, so that we always see the search icon span:*/
+
+
+.sb-search-submit {
+    background: #fff; /* IE needs this */
+    opacity: 0;
+    color: transparent;
+    border: none;
+    outline: none;
+    z-index: -1;
+}
+
+/*the button for clicking, the icon of the magnifier*/
+
+.sb-icon-search {
+    color: #FFF;
+    background: $dark_grey;
+    z-index: 90;
+    font-size: 21px;
+    font-family: 'foundation-icons';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+ 
+.sb-icon-search:before {
+    content: "\f16c";
+}
+
+/*Without JavaScript, we want the search input to be open by default:*/
+.sb-search.sb-search-open,
+.no-js .sb-search {
+    width: 30%;
+}
+
+
+/*we set the submit input’s z-index to a higher value so that we can click on it:*/
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+    z-index: 90;
+}
+
+
+/* when the search field is actually opened. This prevents the flash of the original open content */
+.sb-search-open {
+
+    .sb-search-input {
+            width: 100%;
+        }
+
+    .sb-icon-search {
+        background: $link_color_bright;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+        color: #fff;
+        z-index: 11;
+
+        -webkit-transition: all linear .1s; 
+        -moz-transition: all linear .1s;
+        -ms-transition: all linear .1s;
+        -o-transition: all linear .1s;
+        transition: all linear .1s;
+    }
+}
+
+@media only screen and (max-width: 40em) {  /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+    .sb-search.sb-search-open, .no-js .sb-search {
+        width: 70%;
+    }
+}

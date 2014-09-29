@@ -2,3 +2,34 @@
  * Custom color scheme
  * ----------------------------------------------------------------------------
  */
+
+$primary-color: #F27406; //that's the orange
+$primary_color: $primary-color;
+$secondary-color: #33BAD7;
+$secondary_color: $secondary-color;
+$alert-color: #F32F07;
+$dark_grey: #2c2c2c;
+$paragraph_color: $dark_grey;
+$bright_blue: #33BAD7;
+$light_blue: lighten($bright_blue, 40%);
+$dark_blue: #04648A;
+$brand_green: #A7DA75;
+$light_green: lighten($brand_green, 27%);
+$brand_red: #F32F07;
+$saturated_bg_green: #9ccb6d;
+$saturated_bg_green_dropshadow: #6ba53c;
+$saturated_bg_teal: #33bad7;
+$saturated_bg_teal_dropshadow: #1487ad;
+
+
+$paragraph_link: mix($bright_blue, $dark_blue);
+$link_color_bright: $bright_blue;
+$link_color_bright_hover: scale-color($link_color_bright, $lightness:-10%);
+$link_color_bright_active: scale-color($link_color_bright, $lightness:-20%);
+
+
+$primary-darken: scale-color($primary-color, $lightness: -30%);
+$primary-darken-more: scale-color($primary-darken, $lightness: -5%);
+$stuff: red;
+
+$off-canvas-back-bg: $bright_blue;

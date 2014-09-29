@@ -1,0 +1,284 @@
+/* MIXINS */
+@mixin section_title_shadow($color) {
+		text-shadow: 0.25rem 0.25rem 0 $color;
+}
+
+@mixin section_title_shadow_mobile($color) {
+		text-shadow: 0.12rem 0.12rem 0 $color;
+}
+
+@mixin workshop_title_shadow($color) {
+		box-shadow: .6rem .6rem 0 $color;
+	}
+
+
+/***/
+
+body.page-id-957 {
+	.top-bar-container, .tab-bar {
+		margin-bottom: 0;
+	}
+	footer {
+		.bottom_footer {
+			margin-top: 0.25rem;
+		}
+	}
+
+	a img:hover {
+		opacity: .9;
+	}
+}
+
+.workshop_hero {
+	background-image: url('../images/bg_workshop.jpg');
+	background-repeat: no-repeat;
+	background-position: center 0;
+	// background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-size: 100%;
+	background-color: #f2e2d4;
+	.workshop_logo {
+		margin-bottom: 2rem;
+	}
+	h2 {
+		color: $paragraph_color;
+	}
+	.action_title {
+		font-family: Geometria;
+		text-align: center;
+		font-weight: 500;
+		font-size: 2.5rem;
+		margin: 1.25rem 0 2.25rem;		
+	}
+}
+
+.workshop_list ul li p {
+	text-align: center;
+	font-size: 1rem;
+	line-height: 1.45rem;
+	margin-top: .75rem;
+}
+
+.workshop_content_block {
+	&.full_courses, &.live_webinars {
+		padding: 3rem 0 5rem;
+	}
+
+	.row .columns.section_title h1 {
+		color: #FFF;
+		font-weight: 600;
+		
+		small {
+			color: #FFF;
+			font-weight: 500;
+			
+			&:before {
+				content: '-';
+				padding-right: .5rem;
+			}			
+		}
+	}
+
+	.white_description_box {
+		background: #FFF;
+		padding: 2rem;
+		h1, h2 {
+			font-weight: bold;
+			font-weight: 600;
+		}
+		a {
+			h1, h2, h3, h4, h5, h6 {
+				transition: all .3s ease-out;
+				color: $dark_grey;
+
+				&:hover {
+					color: $primary_color;
+				}
+			}
+		}
+
+		h3.package-option {
+			font-weight: 700;
+
+
+			$family-icon-offset: 55px;
+			$school-icon-offset: 70px;
+
+			&.family {
+				padding-left: $family-icon-offset;
+			}
+			&.school {
+				padding-left: $school-icon-offset;
+			}
+			i {
+				position: relative;
+			}
+			i:before {
+				font-weight: normal;	
+			}
+			i.icomaren-family:before {
+				font-size: 3rem;
+				position: absolute;
+				top: -10px;
+				left: -$family-icon-offset;
+			}
+			i.icomaren-school:before {
+				font-size: 4rem;
+				position: absolute;
+				top: -22px;
+				left: -$school-icon-offset;
+			}
+		}		
+	}
+}
+
+
+.full_courses {
+	background: $saturated_bg_green;
+	.row .columns.section_title h1 {
+			@include section_title_shadow($saturated_bg_green_dropshadow);
+		small {
+			@include section_title_shadow($saturated_bg_green_dropshadow);
+		}		
+	}
+
+	.white_description_box {
+		@include workshop_title_shadow($saturated_bg_green_dropshadow);
+	}
+}
+
+.live_webinars {
+	background: $saturated_bg_teal;
+	.row .columns.section_title h1 {
+			@include section_title_shadow($saturated_bg_teal_dropshadow);
+		small {
+			@include section_title_shadow($saturated_bg_teal_dropshadow);		
+		}		
+	}
+
+	.white_description_box {
+		@include workshop_title_shadow($saturated_bg_teal_dropshadow);
+	}
+
+	.inline_image_left {
+		margin-bottom: 2rem;
+	}
+}
+
+
+.center-all {
+	h1, h2, h3, h4, img {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		display: table;
+	}
+}
+
+.button.register-button {
+	font-weight: 600;
+	font-size: 1.3rem;
+	line-height: 1rem;
+	padding: 1rem 1rem .8rem;
+
+	.register {
+		text-transform: uppercase;
+		padding-left: 38px;
+	
+		&:before {
+			content: "\e615";
+			font-family: 'icomaren';
+			font-size: 1.7rem;
+			position: absolute;
+			top: 16%;
+			line-height: 1em;
+			left: 19px;
+			font-weight: 100;
+		}
+	}
+}
+
+/*** images on page ********/
+.guarantee {
+	position: absolute;
+	right: -2rem;
+	top: -3rem;
+	-moz-transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	-o-transform: rotate(20deg);
+	-ms-transform: rotate(20deg);
+	transform: rotate(20deg);	
+}
+
+
+/* MOBILE ONLY */
+@media only screen and (max-width: 40.063em) {
+
+	.workshop_hero {
+		h2 {
+			font-size: 1.25rem;
+			line-height: 1.5rem;
+		}
+		.action_title {
+			font-size: 2rem;
+			line-height: 2.5rem;
+		}
+	}
+	.workshop_list ul li p {
+		font-size: .75rem;
+		line-height: 1rem;
+		margin-top: .5rem;
+	}
+
+	.live_webinars, .full_courses {
+		.row .columns.section_title h1 small {
+			padding: .5rem 0 1rem;
+			display: block;
+			&:before {
+				content: '';
+				padding: 0;
+			}
+		}
+
+		.white_description_box {
+			box-shadow: none;
+		}
+	}
+
+.package-option.school {
+	margin-top: 2rem;
+}
+
+
+	.live_webinars {
+		.inline_image_left {
+			margin-bottom: 1rem;
+		}
+	}
+
+/*eliminates unnnecssary padding in mobile, doesn't look like boxes anymore, just color dividers */
+	.workshop_content_block.full_courses, .workshop_content_block.live_webinars {
+		padding: .60rem 0 0rem;
+	}
+
+	/*changes the drop shadow distance for mobile */
+	.full_courses {
+		.row .columns.section_title {
+			h1, h1 small {
+				@include section_title_shadow_mobile($saturated_bg_green_dropshadow);
+			}
+		}
+	}
+
+	.live_webinars {
+		.row .columns.section_title {
+			h1, h1 small {
+				@include section_title_shadow_mobile($saturated_bg_teal_dropshadow);	
+			}
+		}
+	}
+
+}

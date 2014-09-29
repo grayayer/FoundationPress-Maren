@@ -4,7 +4,7 @@
   Foundation.libs.equalizer = {
     name : 'equalizer',
 
-    version : '5.3.3',
+    version : '5.4.3',
 
     settings : {
       use_tallest: true,
@@ -42,7 +42,7 @@
         }
       });
 
-      if (settings.equalize_on_stack === true) {
+      if (settings.equalize_on_stack === false) {
         if (isStacked) return;
       };
 
