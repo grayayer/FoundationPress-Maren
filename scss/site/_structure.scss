@@ -120,7 +120,7 @@ input[type="submit"] {
 }
 
 a.button {
-	text-decoration: none !important;
+	text-decoration: none !important; /*otherwise normal buttons in the paragraphs will be underlined text*/
 	&:active {
 		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 	}

@@ -11681,7 +11681,8 @@ input[type="submit"] {
   border-radius: 7px; }
 
 a.button {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  /*otherwise normal buttons in the paragraphs will be underlined text*/ }
   a.button:active {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset; }
   a.button.blue {
