@@ -93,11 +93,15 @@ img.alignright {
 
 // Insert styles here
 
-@import 'icomaren';
-@import 'webfonts'; //currently geometria and the custom iconfont
+@import 'icomaren'; //the custom iconfont
+@import 'webfonts'; //currently geometria and 
 
 a {
 	transition: all 300ms ease-out;
+}
+
+p strong {
+	font-family: 'Open Sans', sans-serif;
 }
 
 .centered {
@@ -115,7 +119,8 @@ input[type="submit"] {
   		  border-radius: $global-radius;
 }
 
-.button {
+a.button {
+	text-decoration: none !important;
 	&:active {
 		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
 	}
@@ -127,15 +132,26 @@ input[type="submit"] {
 	}
 }
 
-ul.arrows li {
+ul.arrows a li, ul.arrows li {
 	list-style-image: none;
 	list-style: none;
 	font-family: geometria;
 	font-weight: 500;
+	color: $link_color_bright;
+	text-shadow: 1px 1px rgba(0,0,0,0.4);
+	&:hover {
+		color: lighten($link_color_bright, 10%);
+	}	
 	&:before {
-		font-family: foundation-icons;
-		content: "\f10b";
+		font-family: 'icomaren';
+		content: "\f061";
 		padding-right: 5px;
+	}
+}
+
+.entry-content { /*modifies text only in the main section */
+	ul, ol {
+		margin-left: 2.5rem;
 	}
 }
 

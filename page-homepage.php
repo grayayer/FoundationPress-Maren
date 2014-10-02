@@ -172,22 +172,22 @@ get_header(); ?>
 				<div class="small-12 medium-6 columns">
 					<div class="row testimonial_block">
 						<div class="small-3 columns">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/Jenn-Edden.jpg">						
+							<a href="http://www.jecoaching.com/" target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/Jenn-Edden.jpg" title="Jenn Edden"></a>
 						</div>
 						<div class="small-9 columns">
 							<p class="testimonial_quote">”Maren has helped me better understand my children on so many levels. Her newsletters are thought provoking and have helped me get out of my own way so I can raise kind, loving, high self esteem children.”</p>
-							<p class="author_attribute">Jenn Edden, CHHC, Speaker & Biz Coach<br>City, State</p>
+							<p class="author_attribute"><a href="http://www.jecoaching.com/" target="_blank">Jenn Edden</a>, CHHC, Speaker & Biz Coach<br>Huntington Station, NY </p>
 						</div>							
 					</div>
 				</div>
 				<div class="small-12 medium-6 columns">
 					<div class="row testimonial_block">
 						<div class="small-3 columns">
-							<img src="<?php echo get_stylesheet_directory_uri() ?>/images/claire-DeBerg.jpg">						
+							<a href="http://www.clairedeberg.com"  target="_blank"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/claire-DeBerg.jpg" title="Cleaire Deberg"></a>						
 						</div>
 						<div class="small-9 columns">
 							<p class="testimonial_quote">”With all of the noise in today's world of social media Maren's Kids Talk newsletter has a musical, inviting tone. It is the one piece of mail to come across my inbox that is worthy of my time and attention.”</p>
-							<p class="author_attribute">Claire DeBerg,Writer/Author<br>City, State</p>
+							<p class="author_attribute"><a href="http://www.clairedeberg.com"  target="_blank">Claire DeBerg</a>, Writer/Author<br>Minneapolis, MN</p>
 						</div>							
 					</div>
 				</div>				

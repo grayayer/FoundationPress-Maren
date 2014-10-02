@@ -14,11 +14,17 @@
 			<div class="entry-content">
 
 			<?php if ( has_post_thumbnail() ): ?>
-				<div class="row">
-					<div class="column">
-						<?php the_post_thumbnail('', array('class' => 'th')); ?>
+				<?php if (has_post_thumbnail( $post->ID )) { //Only post a module if there's a featured image ?>
+					<div class="post_thumbnail">
+						<?php the_post_thumbnail(medium); ?>
 					</div>
-				</div>
+			<?php } else { ?><!--this is what's used when there isn't a featured image -->
+				<!-- 				<a href="<?php the_permalink(); ?>">
+									<div class="post_thumbnail">
+										<img src="<?php // echo get_stylesheet_directory_uri();?>/images/thumbnail_placeholder.jpg" width="100%" height="auto" >
+									</div>
+								</a> -->
+						<?php } ?>
 			<?php endif; ?>
 
 			<?php the_content(); ?>

@@ -97,7 +97,7 @@ So, well set the z-index of the submit input to -1 in the beginning and make it 
     background: $dark_grey;
     z-index: 90;
     font-size: 21px;
-    font-family: 'foundation-icons';
+    font-family: 'icomaren';
     speak: none;
     font-style: normal;
     font-weight: normal;
@@ -107,7 +107,7 @@ So, well set the z-index of the submit input to -1 in the beginning and make it 
 }
  
 .sb-icon-search:before {
-    content: "\f16c";
+    content: "\e60e";
 }
 
 /*Without JavaScript, we want the search input to be open by default:*/

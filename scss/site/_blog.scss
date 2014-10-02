@@ -1,5 +1,15 @@
 body.blog {
 	article header { //gives some space to the meta data from the content 
-	margin-bottom: 1rem;
+	margin-bottom: 0rem;
 	}
+}
+
+.entry_meta {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.post_thumbnail {
+	float: left;
+	padding: 0 2rem 0.5rem 0;
 }
