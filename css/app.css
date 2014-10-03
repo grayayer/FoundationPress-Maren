@@ -12554,4 +12554,9 @@ body.blog article header {
   float: left;
   padding: 0 2rem 0.5rem 0; }
 
+h1.title.category {
+  text-transform: capitalize;
+  border-bottom: dotted 1px #cccccc;
+  margin-bottom: 2rem; }
+
 /* Assets */

@@ -2,6 +2,13 @@
 <div class="row">
 <!-- Row for main content area -->
 	<div class="small-12 large-8 columns" role="main">
+		
+		<?php if ( is_category() ) :	?>			
+			<h1 class="category title">		
+				<!-- CATEGORY CONDITIONAL TITLE -->
+					<small>Category Archive:</small><br><?php single_cat_title(); ?>
+			</h1>
+		<?php endif; ?>				
 
 	<?php if ( have_posts() ) : ?>
 
