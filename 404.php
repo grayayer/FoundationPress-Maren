@@ -16,6 +16,8 @@
 					<li><?php _e('Check your spelling', 'FoundationPress'); ?></li>
 					<li><?php printf(__('Return to the <a href="%s">home page</a>', 'FoundationPress'), home_url()); ?></li>
 					<li><?php _e('Click the <a href="javascript:history.back()">Back</a> button', 'FoundationPress'); ?></li>
+					<li>Try peforming a search by clicking on the magnifying glass icon in the top of this site</li>
+
 				</ul>
 			</div>
 		</article>
