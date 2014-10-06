@@ -29,8 +29,8 @@ get_header(); ?>
 			</div>			
 
 			<ul class="arrows">
-				<a href="#"><li>More about Maren</li></a>
-				<a href="#"><li>Explore free resources</li></a>
+				<a href="/about/"><li>More about Maren</li></a>
+				<a href="/resources/"><li>Explore free resources</li></a>
 			</ul>
 		</div>
 	</div>
@@ -87,7 +87,7 @@ get_header(); ?>
 			<h2 class="center">Let Me Help You</h2>
 			<div class="row feature_boxes">
 				<div class="small-6 large-3 columns">
-					<a href="/newsletters/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/circle-icon-newsletter.png">
+					<a href="/newsletters/"><img src="/wp-content/uploads/2014/10/icon-newsletter.svg">
 					<h4>Newsletters</h4></a>
 					<p>Weekly articles with tips and techniques.</p>
 				</div>

@@ -24,6 +24,22 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.container p a [class^="icomaren-"], .container p a [class*=" icomaren-"] {
+	text-decoration: none;
+	color: $primary_color;
+	&:before {
+		text-decoration: none;
+		color: $primary_color;
+	}
+}
+
+.container p a.icomaren-download {
+	text-decoration: none;
+	&:before {
+		padding-right: 5px;
+	}
+}
+
 .icomaren-register:before {
 	content: "\e615";
 }

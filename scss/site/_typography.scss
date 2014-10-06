@@ -1,0 +1,86 @@
+
+a {
+	transition: all 300ms ease-out;
+}
+
+p strong {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.centered {
+	margin: 0 auto;
+	display: table;
+
+}
+
+.container p a {
+	text-decoration: underline;
+}
+
+input[type="submit"] {
+  -webkit-border-radius: $global-radius;
+  		  border-radius: $global-radius;
+}
+
+a.button {
+	text-decoration: none !important; /*otherwise normal buttons in the paragraphs will be underlined text*/
+	&:active {
+		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
+	}
+	&.blue {
+		background-color: $bright_blue;
+		&:hover {
+			background-color: scale-color($bright_blue, $lightness: $button-function-factor);
+		}
+	}
+}
+
+ul.arrows a li, ul.arrows li {
+	list-style-image: none;
+	list-style: none;
+	font-family: geometria;
+	font-weight: 500;
+	color: $link_color_bright;
+	text-shadow: 1px 1px rgba(0,0,0,0.4);
+	&:hover {
+		color: lighten($link_color_bright, 10%);
+	}	
+	&:before {
+		font-family: 'icomaren';
+		content: "\f061";
+		padding-right: 5px;
+	}
+}
+
+.entry-content { /*modifies text only in the main section */
+	ul, ol {
+		margin-left: 2.5rem;
+	}
+}
+
+.sales-callout {
+	text-align: center;
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin: 1rem 3rem;
+	display: inherit;
+	color: $dark_orange;
+	font-family: geometria;
+	+ br {
+		display: none;
+	}
+}
+
+.widget_recent_entries span.post-date {
+	font-style: italic;
+	font-size: 0.9rem;
+	display: inline-block;
+	margin-bottom: 1rem;
+}
+
+/*image classes */
+
+.inline_image_left {
+	float: left;
+	margin: 0 1.5rem 0.5rem 0;
+}
