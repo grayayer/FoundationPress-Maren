@@ -45,7 +45,7 @@
 	<div class="top-bar-contrast">
 		<div class="row">
 
-			<button class="sign-in"><a href="#">Sign In</a></button>
+			<button class="sign-in"><a href="https://ruzuku.com/login">Sign In</a></button>
 
 			<div id="sb-search" class="sb-search">
 			    <form  role="search" method="get" id="searchform" action="<?php echo get_site_url(); ?>">

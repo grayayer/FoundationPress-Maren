@@ -15,6 +15,7 @@
 /* We use this to set the default radius used throughout the core. */
 /* Off-canvas */
 /* Off Canvas Tab Bar Headers */
+/* ADJUSTING THE PANEL COLORS */
 /* //////////////////////////////////// TOP BAR //////////////////////////////////// */
 /* Height and margin */
 /* Controlling the styles for the title in the top bar */
@@ -4946,10 +4947,10 @@ select {
   .panel.callout {
     border-style: solid;
     border-width: 1px;
-    border-color: #ffd4ba;
+    border-color: #c4ebf5;
     margin-bottom: 1.25rem;
     padding: 1.25rem;
-    background: #fff6f0; }
+    background: #f3fbfd; }
     .panel.callout > :first-child {
       margin-top: 0; }
     .panel.callout > :last-child {
@@ -4962,7 +4963,7 @@ select {
       .panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
         line-height: 1.4; }
     .panel.callout a:not(.button) {
-      color: #f27406; }
+      color: #a7da75; }
   .panel.radius {
     border-radius: 7px; }
 
@@ -12641,6 +12642,26 @@ body.page-id-957 a img:hover {
 /* Panels */
 .panel {
   overflow: auto; }
+  .panel.callout {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d5eeb9;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
+    background: #eef8e3; }
+    .panel.callout > :first-child {
+      margin-top: 0; }
+    .panel.callout > :last-child {
+      margin-bottom: 0; }
+    .panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6, .panel.callout p, .panel.callout li, .panel.callout dl {
+      color: #333333; }
+    .panel.callout h1, .panel.callout h2, .panel.callout h3, .panel.callout h4, .panel.callout h5, .panel.callout h6 {
+      line-height: 1;
+      margin-bottom: 0.625rem; }
+      .panel.callout h1.subheader, .panel.callout h2.subheader, .panel.callout h3.subheader, .panel.callout h4.subheader, .panel.callout h5.subheader, .panel.callout h6.subheader {
+        line-height: 1.4; }
+    .panel.callout a:not(.button) {
+      color: #a7da75; }
 
 body.blog article header {
   margin-bottom: 0rem; }

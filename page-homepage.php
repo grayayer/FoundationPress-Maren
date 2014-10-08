@@ -153,10 +153,10 @@ get_header(); ?>
 					<a href="/resources/books/"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/magazine_mockup_tc.jpg"></a>
 				</div>
 				<div class="small-4 medium-2  columns" data-equalizer-watch>
-					<a href="/resources/books/"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/magazine_mockup_tc2.jpg"></a>
+					<a href="/resources/books/"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/magazine_mockup_ML.jpg"></a>
 				</div>				
 				<div class="small-12 medium-2 columns" style="float:left;" data-equalizer-watch>
-					<a href="/resources/books/" class="publication_link">Check out Maren’s Other Publications and Books <i class="fi-arrow-right"></i></a>
+					<a href="/resources/books/" class="publication_link">Check out Maren’s other publications and books <i class="fi-arrow-right"></i></a>
 				</div>
 			</div>
 		</div>

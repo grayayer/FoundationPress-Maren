@@ -56,4 +56,11 @@ margin-bottom: 2rem;
 /* Panels */
 .panel {
   overflow: auto;
+
+  &.callout {
+    @include panel(scale-color($callout-panel-link-color, $lightness: 80%));
+    a:not(.button) {
+      color: $callout-panel-link-color;
+    }
+  }
 }
