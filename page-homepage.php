@@ -21,7 +21,7 @@ get_header(); ?>
 			</div>
 			<div class="row no-padding">
 				<div class="columns small-12 show-for-medium-up">
-					<a class="button radius large blue">Check out Maren’s Workshops</a>
+					<a href="/workshops/" class="button radius large blue">Check out Maren’s Workshops</a>
 				</div>
 				<div class="columns small-12 large-12 hide-for-medium-up">
 					<a class="button radius blue">Check out Maren’s Workshops</a>
@@ -66,9 +66,9 @@ get_header(); ?>
 </li>
 						<li>A fun and comfortable way to get involved in your child’s learning</li>
 						<li>Time-tested techniques you can use right away</li>
-						<li>Three newsletter formats; <a href="#">choose the one that’s right for you</a></li>
-						<li><a href="#">Over 400 articles</a> to reference</li>
-						<li><a href="#">On-demand online workshops</a> to help you when you need it</li>
+						<li>Three newsletter formats; <a href="/newsletters/">choose the one that’s right for you</a></li>
+						<li><a href="/kids-talk-blog/">Over 400 articles</a> to reference</li>
+						<li><a href="/workshops/">On-demand online workshops</a> to help you when you need it</li>
 						<li>Put-it-into-action advice you can trust</li>
 					</ul>			
 				</div>
@@ -92,17 +92,17 @@ get_header(); ?>
 					<p>Weekly articles with tips and techniques.</p>
 				</div>
 				<div class="small-6 large-3 columns">
-					<a href="/newsletters/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/circle_resources.png">
+					<a href="/resources/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/circle_resources.png">
 					<h4>Books & Resources</h4></a>
 					<p>Recommended books and free resources for inspiration.</p>
 				</div>
 				<div class="small-6 large-3 columns">
-					<a href="/newsletters/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/circle_devices.png">
+					<a href="/workshops/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/circle_devices.png">
 					<h4>Online Workshops</h4></a>
 					<p>When you need additional, more interactive support.</p>
 				</div>
 				<div class="small-6 large-3 columns">
-					<a href="/newsletters/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/circle_qa.png">
+					<a href="/workshops/live-monthly-q-and-a/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/circle_qa.png">
 					<h4>Live Monthly Q&A</h4></a>
 					<p>Have questions? Ask away in my live session held monthly.</p>
 				</div>								
@@ -147,16 +147,16 @@ get_header(); ?>
 			<h2 class="center">Other Places To Find Maren's Advice</h2>
 			<div class="row" data-equalizer>
 				<div class="small-4 medium-2 medium-offset-3 columns" data-equalizer-watch>
-					<a href="/publications/"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/magazine_mockup_kids.jpg"></a>
+					<a href="/resources/books/"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/magazine_mockup_kids.jpg"></a>
 				</div>
 				<div class="small-4 medium-2  columns" data-equalizer-watch>
-					<a href="/publications/"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/magazine_mockup_tc.jpg"></a>
+					<a href="/resources/books/"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/magazine_mockup_tc.jpg"></a>
 				</div>
 				<div class="small-4 medium-2  columns" data-equalizer-watch>
-					<a href="/publications/"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/magazine_mockup_tc2.jpg"></a>
+					<a href="/resources/books/"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/magazine_mockup_tc2.jpg"></a>
 				</div>				
 				<div class="small-12 medium-2 columns" style="float:left;" data-equalizer-watch>
-					<a href="/publications/" class="publication_link">Check out Maren’s Other Publications and books <i class="fi-arrow-right"></i></a>
+					<a href="/resources/books/" class="publication_link">Check out Maren’s Other Publications and Books <i class="fi-arrow-right"></i></a>
 				</div>
 			</div>
 		</div>
