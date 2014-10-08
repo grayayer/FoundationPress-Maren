@@ -52,28 +52,28 @@ get_header(); ?>
 			<h2>Short Courses <small>available now</small></h2>	
 			<ul class="small-block-grid-2 medium-block-grid-3">
 				<li>
-					<a href="/parent-workshops/motivation/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/box_finding_motivation.gif" widt="330" height="250"></a>
+					<a href="/workshops/motivation/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/box_finding_motivation.gif" widt="330" height="250"></a>
 					<p>What are the vital motivational needs to nourish in children and 
 	ourselves? Learn about them here. </p>
 				</li>
 				<li>
-					<a href="/parent-workshops/problem-solving-tools/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/problem_solving_tools_box.gif" widt="330" height="250"></a>
+					<a href="/workshops/problem-solving-tools/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/problem_solving_tools_box.gif" widt="330" height="250"></a>
 					<p>Discover 3 effective ways to problem solve with children and adults. Perfect for home, work or school!</p>
 				</li>
 				<li>
-					<a href="/parent-workshops/preparing-your-home/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/preparing-your-home-box.gif" widt="330" height="250"></a>
+					<a href="/workshops/preparing-your-home/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/preparing-your-home-box.gif" widt="330" height="250"></a>
 					<p>What Montessori ideas are important to use at home? Learn how and why a Montessori home is not a classroom.</p>
 				</li>
 				<li>
-					<a href="/school-workshops/secrets-of-observation/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/secrets_of_observation_box.gif" widt="330" height="250"></a>
+					<a href="/workshops/secrets-of-observation/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/secrets_of_observation_box.gif" widt="330" height="250"></a>
 					<p>Ten secrets of how to become a more skillful Montessori observer and practitioner await you!</p>
 				</li>
 				<li>
-					<a href="/parent-workshops/creativity/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/nourishing_creativity_box.gif" widt="330" height="250"></a>
+					<a href="/workshops/creativity/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/nourishing_creativity_box.gif" widt="330" height="250"></a>
 					<p>Learn how Montessori principles, ideas, tools and people make a difference in your child's creativity.</p>
 				</li>
 				<li>
-					<a href="/school-workshops/unscramble-spelling/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/unscramble-spelling-box.gif" widt="330" height="250"></a>
+					<a href="/workshops/unscramble-spelling/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/workshop_boxes/unscramble-spelling-box.gif" widt="330" height="250"></a>
 					<p>Here's the expert help you need to develop excellent spellers in your elementary programs.</p>
 				</li>																				
 			</ul>
@@ -103,12 +103,12 @@ get_header(); ?>
 					<div class="small-12 medium-5 medium-offset-1 columns">
 						<a href="/workshops/parent_support/"><h3 class="package-option family"><i class="icomaren-family"></i> Single Family</h3></a>
 						<p>Join me for this six week journey to support your parenting...the Montessori Way.</p>
-						<a class="button radius" href="/workshops/parent-support-program/#family">Learn More</a>
+						<a class="button radius" href="/workshops/parent-support-program/">Learn More</a>
 					</div>
 					<div class="small-12 medium-5 columns">
-						<a href="/workshops/parent_support/"><h3 class="package-option school"><i class="icomaren-school"></i> Schools</h3></a>
+						<a href="/workshops/parent_support/schools/"><h3 class="package-option school"><i class="icomaren-school"></i> Schools</h3></a>
 						<p>Find out how your school community can benefit from this parent support program.</p>
-						<a class="button radius" href="/workshops/parent-support-program/#school">Bulk Packages for Schools</a>
+						<a class="button radius" href="/workshops/parent-support-program/schools/">Bulk Packages for Schools</a>
 					</div>				
 					<div class="medium-1 hide-for-small columns">
 					</div>
