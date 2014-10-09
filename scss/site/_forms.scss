@@ -1,7 +1,5 @@
-div.entry-content .gform_wrapper {
-	clear: both;
-	padding-top: .5rem;
-	
+ .gform_wrapper {
+
 	ul {
 		margin: 0;
 	}
@@ -150,3 +148,8 @@ div.entry-content .gform_wrapper {
 		}
 	}
 }
+
+div.entry-content .gform_wrapper {
+	clear: both;
+	padding-top: .5rem;
+	}
