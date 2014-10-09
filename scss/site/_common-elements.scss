@@ -60,7 +60,10 @@ margin-bottom: 2rem;
   &.callout {
     @include panel(scale-color($callout-panel-link-color, $lightness: 80%));
     a:not(.button) {
-      color: $callout-panel-link-color;
+      color: scale-color($callout-panel-link-color, $lightness: -30%);
+      &:hover {
+      	color: scale-color($callout-panel-link-color, $lightness: -50%)
+      }
     }
   }
 }

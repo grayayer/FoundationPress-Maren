@@ -25,13 +25,10 @@ get_header(); ?>
 				</div>
 				<div class="columns small-12 large-12 hide-for-medium-up">
 					<a class="button radius blue">Check out Maren’s Workshops</a>
-				</div>				
+				</div>
+				<div class="columns small-12" style="margin-top:2rem;"></div>			
 			</div>			
 
-			<ul class="arrows">
-				<a href="/about/"><li>More about Maren</li></a>
-				<a href="/resources/"><li>Explore free resources</li></a>
-			</ul>
 		</div>
 	</div>
 </div>
