@@ -11766,6 +11766,10 @@ p strong {
 .centered {
   margin: 0 auto;
   display: table; }
+  .centered p, .centered h1, .centered h2, .centered h3, .centered h4, .centered h5, .centered img {
+    text-align: center;
+    margin: 0 auto;
+    display: block; }
 
 .container p a {
   text-decoration: underline; }
@@ -11830,6 +11834,10 @@ span.sales-callout {
 .inline_image_left {
   float: left;
   margin: 0 1.5rem 0.5rem 0; }
+
+/* testimonials */
+cite title {
+  display: block; }
 
 /**
  * 3.0 Header, sidebar and footer

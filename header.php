@@ -45,7 +45,22 @@
 	<div class="top-bar-contrast">
 		<div class="row">
 
-			<button class="sign-in"><a href="https://ruzuku.com/login">Sign In</a></button>
+			<button class="sign-in" data-reveal-id="myModal"><a>Sign In</a></button>
+
+			<div id="myModal" class="reveal-modal" data-reveal>
+				<div class="centered">
+					<img src="<?php echo get_stylesheet_directory_uri()?>/images/kids_talk_workshops_logo.svg" width="350">
+					<br>				
+					<h2>All Kids Talk Online Workshops are hosted with Ruzuku.</h2>
+					<br>
+					<a href="https://ruzuku.com/login" class="button centered primary radius large">Sign in to Ruzuku <i class="icomaren-newtab"></i></a>
+				</div>
+				<br>
+				<p>Forgot your password?  You'll find information on the Ruzuku sign-in page on how to retrieve it. </p>
+
+				<p>Want to register for a workshop?  Take a look at our <a href="/workshops/">Workshop Page</a>.</p>
+				<a class="close-reveal-modal">&#215;</a>
+			</div>
 
 			<div id="sb-search" class="sb-search">
 			    <form  role="search" method="get" id="searchform" action="<?php echo get_site_url(); ?>">
