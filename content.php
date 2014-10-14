@@ -32,8 +32,10 @@
 			<?php the_excerpt(__('Continue reading...', 'FoundationPress')); ?>
 		</div>
 	</div>
+ <!-- don't need tags displayed
 	<footer>
-		<?php $tag = get_the_tags(); if (!$tag) { } else { ?><p><?php the_tags(); ?></p><?php } ?>
-	</footer>
+		<?php // $tag = get_the_tags(); if (!$tag) { } else { ?>
+		<p><?php // the_tags(); ?></p><?php // } ?>
+	</footer> -->
 	<hr />
 </article>
