@@ -51,7 +51,7 @@
 				<div class="centered">
 					<img src="<?php echo get_stylesheet_directory_uri()?>/images/kids_talk_workshops_logo.svg" width="350">
 					<br>				
-					<h2>All Kids Talk Online Workshops are hosted with Ruzuku.</h2>
+					<h2>All of our workshops are hosted with Ruzuku.</h2>
 					<br>
 					<a href="https://ruzuku.com/login" class="button centered primary radius large" onClick="ga('send', 'event', 'button', 'click', 'login modal ruzuku', 4);">Sign in to Ruzuku <i class="icomaren-newtab"></i></a>
 				</div>
