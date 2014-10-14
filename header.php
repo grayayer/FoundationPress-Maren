@@ -45,7 +45,7 @@
 	<div class="top-bar-contrast">
 		<div class="row">
 
-			<button class="sign-in" data-reveal-id="myModal"><a>Sign In</a></button>
+			<button class="sign-in" data-reveal-id="myModal" onClick="ga('send', 'event', 'button', 'click', 'login top nav', 4);"><a>Sign In</a></button>
 
 			<div id="myModal" class="reveal-modal" data-reveal>
 				<div class="centered">
@@ -53,7 +53,7 @@
 					<br>				
 					<h2>All Kids Talk Online Workshops are hosted with Ruzuku.</h2>
 					<br>
-					<a href="https://ruzuku.com/login" class="button centered primary radius large">Sign in to Ruzuku <i class="icomaren-newtab"></i></a>
+					<a href="https://ruzuku.com/login" class="button centered primary radius large" onClick="ga('send', 'event', 'button', 'click', 'login modal ruzuku', 4);">Sign in to Ruzuku <i class="icomaren-newtab"><./</a>
 				</div>
 				<br>
 				<p>Forgot your password?  You'll find information on the Ruzuku sign-in page on how to retrieve it. </p>
