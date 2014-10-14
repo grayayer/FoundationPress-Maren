@@ -8,8 +8,8 @@ get_header(); ?>
 	<div class="row">
 		<div class="small-12 columns center-all">
 			<img class="workshop_logo" src="<?php echo get_stylesheet_directory_uri()?>/images/kids_talk_workshops_logo.svg"/>
-			<h2>Would you like more aha! Moments with children?</h2>
-			<h2>Want to help children conect to their inner wisdom? </h2>
+			<h2>Would you like more aha! moments with children?</h2>
+			<h2>Want to help children connect to their inner wisdom? </h2>
 			<h2>Wish for tools to help you make a difference?</h2>
 			<p class="action_title">Get put-it-into-action advice you can use today!</p>
 		</div>
