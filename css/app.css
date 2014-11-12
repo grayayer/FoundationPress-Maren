@@ -12774,7 +12774,7 @@ div.quote {
     display: inline-block;
     padding-left: 1rem; }
     div.quote cite.author span[itemprop="name"] {
-      font-size: 1.3rem;
+      font-size: 1.15rem;
       font-style: normal; }
     div.quote cite.author span.title {
       display: block; }
@@ -12794,5 +12794,47 @@ h1.title.category {
   text-transform: capitalize;
   border-bottom: dotted 1px #cccccc;
   margin-bottom: 2rem; }
+
+
+a.image_download_link img {
+  position: relative;
+  /*	&:before {
+		font-family: "icomaren";
+		content: "\e60d";
+		display: block;
+		font-weight: normal;
+		text-shadow: 1px 1px 1px #FFF;
+		opacity: 0;
+		color: $paragraph_link;
+		-webkit-transition: all .3s ease;
+		-moz-transition: all .3s ease;
+		-ms-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		transition: all .3s ease;
+		font-size: 3.5em;
+		position: absolute;
+	top: 50%;
+	transform: translateY(107%) translateX(140%);
+		//background: #fff;
+		//border: 1px solid $paragraph_link;
+		//border-radius: 100%;
+	}
+	&:hover:before {
+		opacity:1;
+		cursor: url(images/download_icon.png), url(https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/64/download.png), crosshair;
+	}*/ }
+  a.image_download_link img:hover {
+    opacity: 1;
+    cursor: url(images/download_icon.png), url(https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/64/download.png), crosshair; }
+  a.image_download_link img:active:hover {
+    cursor: url(images/download_icon_active.png); }
+  a.image_download_link img:active:before {
+    opacity: 1;
+    color: #f27406;
+    -webkit-transition: all 0.03s ease;
+    -moz-transition: all 0.03s ease;
+    -ms-transition: all 0.03s ease;
+    -o-transition: all 0.03s ease;
+    transition: all 0.03s ease; }
 
 /* Assets */

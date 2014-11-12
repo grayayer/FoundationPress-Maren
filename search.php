@@ -4,10 +4,10 @@
 
 		<?php do_action('foundationPress_before_content'); ?>
 
-		<h2><?php _e('Search Results for', 'FoundationPress'); ?> "<?php echo get_search_query(); ?>"</h2>
+		<h2 class="search_archive_title"><img src="<?php echo get_stylesheet_directory_uri() ?>/images/magnifying_glass_flip.svg" width="75"> <?php _e('Search Results for', 'FoundationPress'); ?> "<?php echo get_search_query(); ?>"</h2>
 
 	<?php if ( have_posts() ) : ?>
-
+		<hr>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'content', 'search' ); ?>
 			<?php  // get_template_part( 'content', get_post_format() ); ?>

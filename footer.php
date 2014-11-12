@@ -16,15 +16,15 @@
 <?php wp_footer(); ?>
 <?php do_action('foundationPress_before_closing_body'); ?>
 
+
+<!--   // triggering the login modal window by inclduing #myModal in a url -->
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+document.addEventListener("DOMContentLoaded", function(event) {
+   var id = window.location.hash.substring(1); // remove the #
+   var element = document.querySelector('[data-reveal-id="' + id + '"]');
 
-  ga('create', 'UA-49263210-1', 'auto');
-  ga('send', 'pageview');
-
+   element.click();
+});
 </script>
 
 </body>

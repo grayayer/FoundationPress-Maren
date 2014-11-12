@@ -33,6 +33,7 @@
 	<!-- google fonts-->
 	<link href='http://fonts.googleapis.com/css?family=Muli:400,400italic' rel='stylesheet' type='text/css'>
 
+
 	</head>
 	<body <?php body_class(); ?>>
 	<?php do_action('foundationPress_after_body'); ?>
@@ -45,9 +46,9 @@
 	<div class="top-bar-contrast">
 		<div class="row">
 
-			<button class="sign-in" data-reveal-id="myModal" onClick="ga('send', 'event', 'button', 'click', 'login top nav', 4);"><a>Sign In</a></button>
+			<button class="sign-in" data-reveal-id="ruzuku_login" onClick="ga('send', 'event', 'button', 'click', 'login top nav', 4);"><a>Sign In</a></button>
 
-			<div id="myModal" class="reveal-modal" data-reveal>
+			<div id="ruzuku_login" class="reveal-modal" data-reveal>
 				<div class="centered">
 					<img src="<?php echo get_stylesheet_directory_uri()?>/images/kids_talk_workshops_logo.svg" width="350">
 					<br>				

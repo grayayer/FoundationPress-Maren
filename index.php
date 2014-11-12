@@ -2,6 +2,8 @@
 <div class="row">
 	<div class="small-12 large-8 columns" role="main">
 
+	<h1><img src="<?php echo get_stylesheet_directory_uri()?>/images/Kids-Talk-newsletters.svg" style="margin: 0 auto 1rem; display: block;" width="400"></h1>
+	<hr>
 	<?php if ( have_posts() ) : ?>
 
 		<?php do_action('foundationPress_before_content'); ?>

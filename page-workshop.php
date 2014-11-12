@@ -129,7 +129,7 @@ get_header(); ?>
 				<div class="row">
 					<div class="small-12 medium-6 columns">
 						<a href="https://ruzuku.com/courses/3545/enroll" target="_blank"><h1>See It In Your Child</h1></a>
-						<p><img class="inline_image_left" src="<?php echo get_stylesheet_directory_uri()?>/images/circle_qa.png" width="125" height"125"/> Join me for this free live monthly question and answer session where I'll answer your questions about child development using time-tested techniques and proven child development principles.</p>
+						<p><img class="inline_image_left" src="<?php echo get_stylesheet_directory_uri()?>/images/qa.svg" width="125" height"125"/> Join me for this free live monthly question and answer session where I'll answer your questions about child development using time-tested techniques and proven child development principles.</p>
 						<p>When you register today, you get immediate access to previous hour-long monthly sessions. You'll also receive reminders before each session so you can send in questions early.</p>
 						<p>Mark your calendar for the second Thursday of the month!</p>
 					</div>

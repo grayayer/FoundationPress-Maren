@@ -24,7 +24,7 @@ get_header(); ?>
 					<a href="/workshops/" class="button radius large blue">Check out Maren’s Workshops</a>
 				</div>
 				<div class="columns small-12 large-12 hide-for-medium-up">
-					<a class="button radius blue">Check out Maren’s Workshops</a>
+					<a href="/workshops/" class="button radius blue">Check out Maren’s Workshops</a>
 				</div>
 				<div class="columns small-12" style="margin-top:2rem;"></div>			
 			</div>			
@@ -99,7 +99,7 @@ get_header(); ?>
 					<p>When you need additional, more interactive support.</p>
 				</div>
 				<div class="small-6 large-3 columns">
-					<a href="/workshops/live-monthly-q-and-a/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/circle_qa.png">
+					<a href="/workshops/live-monthly-q-and-a/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/qa.svg" width="200">
 					<h4>Live Monthly Q&A</h4></a>
 					<p>Have questions? Ask away in my live session held monthly.</p>
 				</div>								
@@ -118,13 +118,14 @@ get_header(); ?>
 		<div class="small-12 large-12 columns">
 			<div class="row">
 				<div class="small-3 large-3 show-for-large-up columns">
-					<a href='/about/'><img src="<?php echo get_stylesheet_directory_uri()?>/images/maren_profile_circle3.jpg" style="margin-top: -2rem;" class="bio_large"></a>
+					<a href='/about/'><img src="<?php echo get_stylesheet_directory_uri()?>/images/Maren-Home-Page-PORTRAIT.jpg" style="margin-top: -2rem;" class="bio_large"></a>
 				</div>
 				<div class="small-12 large-9 columns bio" style="padding-left: 2rem;">
 					<p>
-					<span class="hide-for-large-up"><img src="<?php echo get_stylesheet_directory_uri()?>/images/maren_profile_circle3.jpg" class="bio_mobile hide-for-large-up"></span>
+					<span class="hide-for-large-up"><a href="/about/"><img src="<?php echo get_stylesheet_directory_uri()?>/images/Maren-Home-Page-PORTRAIT.jpg" class="bio_mobile hide-for-large-up"></a></span>
 
-						Maren Schmidt is a certified Montessori teacher with the Association Montessori Internationale (AMI) and holds a Masters in Education from Loyola College in Maryland, as well as a BA from the University of Arkansas in Interpersonal and Organizational Communications. Maren founded a Montessori school and has over thirty years experience working with children.</p>
+						Maren Schmidt is a certified Montessori teacher with the Association Montessori Internationale (AMI) and holds a Masters in Education from Loyola College in Maryland,
+						as well as a BA from the University of Arkansas at Little Rock in Interpersonal and Organizational Communications. Maren founded a Montessori school and has over thirty years experience working with children.</p>
 					<span class="show-for-large-up"><a class="button radius blue inside-column" href="/about/">READ MORE ABOUT MAREN</a></span>
 				</div>
 					<span class="hide-for-large-up"><a class="button radius blue outside-column" href="/about/">READ MORE ABOUT MAREN</a></span>
